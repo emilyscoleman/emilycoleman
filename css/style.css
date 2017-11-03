@@ -1,22 +1,14 @@
-/* Type Selectors */
+/* Type Selectors ------------------ */
 
 body {
   color: #878787;
   margin: 0;
-}
-
-.main-header {
-  background-color: orange;
-}
-
-.title {
-  color: white;
-  font-size: 26px;
+  font-size: 1em;
 }
 
 h1 {
-  font-size: 90px;
-  color: white;
+  font-size: 5.625rem; /* 90px / 16px */
+  color: rgba(255,255,255,.5);
 }
 
 h2 {
@@ -25,31 +17,14 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color: #48525c
+  color: #48525c;
 }
 
-/* Class Selectors */
 
-.primary-content {
-  text-align: center;
-}
-
-.t-border {
-  border-top: 2px solid lightgrey;
-}
-
-/* ID Selectors */
-
-#main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: solid 10px orange;
-}
-
-/* Pseudo-class Selectors */
+/* Pseudo-classes ------------------ */
 
 a:link {
-  color: orange;
+  color: rgb(255, 169, 73);
 }
 
 a:visited {
@@ -57,14 +32,41 @@ a:visited {
 }
 
 a:hover {
-  color: forestgreen;
+  color: rgba(255, 169, 73, .4);
 }
 
 a:active {
   color: lightcoral;
 }
 
-:focus {
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #ffa949;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
+  background-color: #ffa949;
+}
+
+.title {
   color: white;
-  background-color: orange;
+  font-size: 1.625rem; /* 26 px / 16px */
+}
+
+.primary-content,
+.secondary-content {
+  width: 60%;
+}
+
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
 }
